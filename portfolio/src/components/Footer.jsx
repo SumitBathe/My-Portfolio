@@ -45,7 +45,7 @@ import MessageBox from "../components/MessageBox";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col items-center text-center py-6 bg-white dark:bg-white space-y-4">
+    <footer className="flex flex-col items-center text-center py-6 bg-white dark:bg-slate-900 space-y-8 w-full">
       <div className="w-full max-w-lg">
         <MessageBox />
       </div>
@@ -55,25 +55,25 @@ const Footer = () => {
       </div>
 
       <div className="flex justify-center gap-6 text-2xl">
-        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:scale-110 transition-transform">
+        <a href="https://www.linkedin.com/in/sumit-bathe/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:scale-110 transition-transform">
           <FaLinkedin />
         </a>
-        <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:scale-110 transition-transform">
+        <a href="https://github.com/SumitBathe" target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:scale-110 transition-transform">
           <FaGithub />
         </a>
-        <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer" className="text-pink-600 hover:scale-110 transition-transform">
+        <a href="https://www.instagram.com/sumitbathe?igsh=MXJnd2JmcW1lZGNsbg==" target="_blank" rel="noopener noreferrer" className="text-pink-600 hover:scale-110 transition-transform">
           <FaInstagram />
         </a>
-        <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:scale-110 transition-transform">
+        <a href="https://x.com/Im_sumit_rb?t=VEc2b0ZHPpOIbd_6xc8iLg&s=08" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:scale-110 transition-transform">
           <FaTwitter />
         </a>
-        <a href="mailto:your.email@example.com" className="text-red-600 hover:scale-110 transition-transform">
+        <a href="mailto:sumitbathe37@gmail.com" className="text-red-600 hover:scale-110 transition-transform">
           <FaEnvelope />
         </a>
       </div>
       
       <p className="text-gray-600 dark:text-gray-400">Made with ❤️ in India</p>
-      <img src={footerImage} alt="Footer Graphic" className="mt-4 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto" />
+      <img src={footerImage} alt="Footer Graphic" className="mt-4 w-[60%]   mx-auto" />
     </footer>
   );
 };

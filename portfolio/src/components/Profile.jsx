@@ -154,34 +154,35 @@ const Profile = () => {
         </div>
 
         {/* Social Media Icons Section */}
-        <div className="flex justify-center gap-6 mt-6 flex-wrap">
+        <div className="flex justify-center gap-6 mt-6 flex-wrap">          
           <a
-            href="https://www.instagram.com"
+            href="https://www.linkedin.com/in/sumit-bathe/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-100 hover:text-indigo-200 transition-colors"
-          >
-            <FaInstagram size={30} />
-          </a>
-          <a
-            href="https://www.linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-100 hover:text-indigo-200 transition-colors"
+            className="text-gray-100 hover:text-indigo-700 transition-colors"
           >
             <FaLinkedin size={30} />
           </a>
           <a
-            href="https://twitter.com"
+            href="https://x.com/Im_sumit_rb?t=VEc2b0ZHPpOIbd_6xc8iLg&s=08"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-100 hover:text-indigo-200 transition-colors"
+            className="text-gray-100 hover:text-indigo-900 transition-colors"
           >
             <FaTwitter size={30} />
           </a>
           <a
-            href="mailto:your-email@example.com"
-            className="text-gray-100 hover:text-indigo-200 transition-colors"
+            href="https://www.instagram.com/sumitbathe?igsh=MXJnd2JmcW1lZGNsbg=="
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-100 hover:text-red-600 transition-colors"
+          >
+            <FaInstagram size={30} />
+          </a>
+          <a
+            href="mailto:sumitbathe37@gmail.com"
+            target="_blank"
+            className="text-gray-100 hover:text-red-600 transition-colors"
           >
             <FaEnvelope size={30} />
           </a>
@@ -205,11 +206,11 @@ const Profile = () => {
         </p>
 
         {/* Download Resume Button */}
-        {/* <a href="/path/to/resume.pdf" download>
+        <a href="https://drive.google.com/file/d/1BZlJUHQqJhMABQHo0tdLXhzKcrdns96Y/view" target="blank" download>
           <button className="py-2 px-4 bg-indigo-600 text-white font-semibold rounded-lg shadow-lg hover:bg-indigo-500 transition-colors">
-            Download Resume
+            View Resume
           </button>
-        </a> */}
+        </a>
       </div>
     </section>
   );
