@@ -101,6 +101,7 @@
 
 import { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
+import { trackEvent } from "../analytics";
 
 const MessageBox = () => {
   const [message, setMessage] = useState("");
@@ -130,7 +131,11 @@ const MessageBox = () => {
       ></textarea>
 
       <button
-        onClick={sendWhatsAppMessage}
+      onClick={() => {
+        trackEvent("Instagram visit", "User viewed Instagram");
+        sendWhatsAppMessage();
+      }}
+      
         className="w-full mt-3 flex items-center justify-center gap-2 px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition"
       >
         <FaWhatsapp size={20} />

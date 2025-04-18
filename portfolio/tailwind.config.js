@@ -65,7 +65,7 @@ export default {
       },
       animation: {
         slide: 'slide 3s ease-in-out infinite',
-        marquee: 'marquee 15s linear infinite', // Add marquee animation here
+        marquee: 'marquee 15s linear infinite', 
       },
     },
   },

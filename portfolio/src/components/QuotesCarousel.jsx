@@ -1,45 +1,6 @@
-// import { useState, useEffect } from "react";
-// import { motion, AnimatePresence } from "framer-motion";
-
-// const quotes = [
-//   "The only way to do great work is to love what you do.",
-//   "Success is not final, failure is not fatal: it is the courage to continue that counts.",
-//   "Code is like humor. When you have to explain it, it’s bad.",
-//   "Simplicity is the soul of efficiency."
-// ];
-
-// const QuotesCarousel = () => {
-//   const [index, setIndex] = useState(0);
-
-//   useEffect(() => {
-//     const interval = setInterval(() => {
-//       setIndex((prevIndex) => (prevIndex + 1) % quotes.length);
-//     }, 3000);
-//     return () => clearInterval(interval);
-//   }, []);
-
-//   return (
-//     <div className="flex flex-col items-center justify-center h-40 bg-gray-100 dark:bg-gray-800 p-6 rounded-xl shadow-lg">
-//       <AnimatePresence mode="wait">
-//         <motion.p
-//           key={index}
-//           initial={{ opacity: 0, y: 10 }}
-//           animate={{ opacity: 1, y: 0 }}
-//           exit={{ opacity: 0, y: -10 }}
-//           transition={{ duration: 0.5 }}
-//           className="text-lg font-semibold text-center text-gray-900 dark:text-gray-100"
-//         >
-//           {quotes[index]}
-//         </motion.p>
-//       </AnimatePresence>
-//     </div>
-//   );
-// };
-
-// export default QuotesCarousel;
-
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Quote } from "lucide-react";
 
 const quotes = [
   {
@@ -66,7 +27,7 @@ const QuotesCarousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % quotes.length);
-    }, 5000); // Increased time to 5 seconds
+    }, 5000); 
     return () => clearInterval(interval);
   }, []);
 
@@ -82,6 +43,13 @@ const QuotesCarousel = () => {
             transition={{ duration: 0.5 }}
             className="text-center"
           >
+              <motion.div
+                initial={{ scale: 0.5, rotate: -10 }}
+                animate={{ scale: 1, rotate: 0 }}
+                transition={{ type: "spring", stiffness: 200, damping: 10 }}
+              >
+                <Quote className="mx-auto w-8 h-8 text-yellow-500 mb-4" />
+              </motion.div>
             {/* Quote Text */}
             <p className="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
               "{quotes[index].text}"
@@ -99,4 +67,3 @@ const QuotesCarousel = () => {
 };
 
 export default QuotesCarousel;
-
