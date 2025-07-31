@@ -5,7 +5,7 @@ import { trackEvent } from "../analytics";
 
 const Profile = () => {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-center p-8 bg-gradient-to-b from-indigo-500 via-purple-500 to-pink-500 min-h-screen">   
+    <section className="flex flex-col md:flex-row items-center justify-center p-8 bg-gradient-to-b from-indigo-500 via-purple-500 to-pink-500 dark:bg-gradient-to-bl dark:from-purple-600 dark:via-amber-600 dark:to-fuchsia-500 min-h-screen">   
       <div className="flex flex-col items-center mb-6 md:mb-0">
         <div className="w-64 h-64 md:w-64 md:h-64 rounded-full overflow-hidden shadow-lg mb-6 md:mb-0 border-4 border-black transform transition-all hover:scale-105">
           <img
@@ -61,14 +61,14 @@ const Profile = () => {
         </p>
 
         <p className="text-lg text-white leading-relaxed mb-4">
-          With over a year of hands-on experience as a <span className="font-bold">Full-stack Developer</span>, I specialize in creating <span className="font-bold">robust, scalable web applications</span>. I’m skilled in a variety of technologies, including <span className="font-bold">JavaScript</span>, <span className="font-bold">ReactJS</span>, and <span className="font-bold">Node.js</span>, and I love solving complex challenges to deliver seamless user experiences.
+          With over 2.5 year of hands-on experience as a <span className="font-bold">Full-stack Developer</span>, I specialize in creating <span className="font-bold">robust, scalable web applications</span>. I’m skilled in a variety of technologies, including <span className="font-bold">JavaScript</span>, <span className="font-bold">ReactJS</span>, and <span className="font-bold">Node.js</span>, and I love solving complex challenges to deliver seamless user experiences.
         </p>
 
         <p className="text-lg text-white leading-relaxed mb-6">
           I’m always open to discussing <span className="font-bold">new opportunities</span> and am deeply curious about <span className="font-bold">learning</span> and growing in the ever-evolving tech landscape.
         </p>
 
-        <a href="https://drive.google.com/file/d/1BZlJUHQqJhMABQHo0tdLXhzKcrdns96Y/view" target="blank" download>
+        <a href="https://drive.google.com/file/d/1X98IWOJN10RSTmHQkAB05h4IMaPwT8or/view?usp=drivesdk" target="blank" download>
           <button className="py-2 px-4 bg-indigo-600 text-white font-semibold rounded-lg shadow-lg hover:bg-indigo-500 transition-colors"
           onClick={() => trackEvent("Resume Download", "User downloaded resume")}
           >

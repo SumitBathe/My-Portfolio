@@ -54,7 +54,7 @@ const LandingPage = () => {
         <ParticleBackground />
       </div>
 
-      <div className="absolute inset-0 bg-black/60 z-10 pointer-events-none" />
+      <div className="absolute inset-0 bg-black/10 z-10 pointer-events-none" />
 
       <div
         className="absolute z-20 pointer-events-none hidden md:block"
@@ -80,9 +80,19 @@ const LandingPage = () => {
           className="w-78 h-80 md:w-74 md:h-72 mb-6 "
         />
 
-        <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold hover:text-yellow-400 cursor-pointer transition duration-300">
+        {/* <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold hover:text-yellow-400 cursor-pointer transition duration-300">
           Sumit Bathe
-        </h1>
+        </h1> */}
+        <h1
+  className="text-4xl sm:text-5xl md:text-7xl font-extrabold 
+             bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 
+             bg-clip-text text-transparent 
+             hover:from-purple-400 hover:to-yellow-300 
+             cursor-pointer transition duration-500 
+             font-[Lobster]">
+  Sumit Bathe
+</h1>
+
 
         <div className="text-base sm:text-lg md:text-2xl text-gray-100 mt-4">
           <Typewriter

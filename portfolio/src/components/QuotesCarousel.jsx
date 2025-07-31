@@ -16,8 +16,8 @@ const quotes = [
     author: "Cory House"
   },
   {
-    text: "Simplicity is the soul of efficiency.",
-    author: "Austin Freeman"
+    text: "Stay humble. In the vast ocean of code, we are all still learning to swin. Be a learner first, teacher next, and master never.",
+    author: "NamasteDev.com"
   }
 ];
 

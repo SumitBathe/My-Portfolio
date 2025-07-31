@@ -138,7 +138,9 @@ const PortfolioProjects = () => {
           <div
             key={project.title}
             className="bg-gray-100 dark:bg-gray-800 rounded-xl p-4 shadow-md hover:scale-[1.03] hover:shadow-xl transition-transform duration-300 ease-in-out cursor-pointer text-center flex flex-col items-center border border-gray-300 dark:border-gray-600"
-            onClick={() => setSelectedProject(project)}
+            onClick={() => {setSelectedProject(project);
+              trackEvent("Project Viewd", `${project} viewd by someone`)}
+            }
           >
             <div className="relative w-full h-48 overflow-hidden rounded-md mb-4 flex items-center justify-center">
               <img src={project.thumbnail} alt={project.title} className="max-h-full w-auto object-contain" />
@@ -146,6 +148,7 @@ const PortfolioProjects = () => {
             <h3 className="text-xl font-semibold text-black dark:text-white line-clamp-2 leading-snug">
               {project.title}
             </h3>
+            <p className="text-xs text-blue-600 underline underline-offset-2">View Details</p>
           </div>
         ))}
       </div>

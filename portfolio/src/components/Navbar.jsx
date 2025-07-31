@@ -52,7 +52,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full bg-gradient-to-b from-slate-300 via-slate-600 to-slate-950 dark:bg-slate-950 shadow-md p-4 flex justify-between items-center z-50 transition-transform duration-300 ${
+      className={`fixed top-0 left-0 w-full bg-gradient-to-b from-slate-300 via-slate-400 to-slate-600 dark:bg-gradient-to-b dark:from-slate-800 dark:via-slate-700 dark:to-slate-600 shadow-md p-4 flex justify-between items-center z-50 transition-transform duration-300 ${
         showNavbar ? "translate-y-0" : "-translate-y-full"
       }`}
     >

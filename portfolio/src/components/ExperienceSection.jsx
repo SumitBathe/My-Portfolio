@@ -54,8 +54,8 @@ const experiences = [
     company: "Mandate IT Solution",
     company_site:"https://mandates.in/",
     role: "Front-End Developer",
-    duration: "Mar 2024 - Present",
-    techStack: "ReactJS, JavaScript, Tailwind CSS, HTML",
+    duration: "Apr 2024 - Present",
+    techStack: "ReactJS, JavaScript, Redux, Tailwind CSS, HTML",
     description:
       "Worked on scalable web applications, implementing dynamic UI components, integrating APIs, providing deployment support, enhancing UI/UX, and optimizing performance.",
   },
